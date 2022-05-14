@@ -1,0 +1,9 @@
+p{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container .text{
+    background-color: yellow;
+    color: red;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.number{
+    font-size: 40px;
+    background-color: rgb(255, 148, 148);
+}
+
+#number2{
+    font-size: 80px;
+    color: blue;
+}
+
+#number4{
+    font-size: 50px;
+    font-weight: bold;
+    background-color: greenyellow;
+}
+
+.number.cooler{
+    color: white;
+}

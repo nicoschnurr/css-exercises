@@ -1,27 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
-  width: 600px;
+  width: 400px;
 }
 
 button {
-  font-family: Roboto, sans-serif;
-  border: none;
-  border-radius: 8px;
-  background: #eee;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: white;
+  border-color: black
 }
 
 input {
   border: 1px solid #ddd;
+  border-width: 2px;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+  border-color: rgb(201, 168, 78);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 0px;
+  font-size: 17px;
+  font-weight: bold;
+}
+a {
+  color: rgb(116, 116, 116);
+}
+header {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  margin-top: auto;
+}
+
+ul.right-links {
+  margin-left: auto;
+}
+
+footer ul {
+  margin-bottom: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+button.search {
+  background: rgb(201, 168, 78);
+  border: 3px solid rgb(201, 168, 78);
+  color: white;
+  width: 105px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+button.search:hover {
+  background: rgb(175, 147, 68);
+  border: 3px solid rgb(175, 147, 68);
+  color: white;
+  width: 105px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+  padding-left: 25px;
+}
+
+button.search span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
+button.search:hover span {
+  padding-right: 25px;
+}
+
+button.search:hover span:after {
+  opacity: 1;
+  right: 0;
 }
